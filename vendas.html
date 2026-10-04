@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia - Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vendas / Carrinho</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="estoque.html">Estoque</a>
+        <a href="vendas.html">Vendas</a>
+        <a href="receita.html">Receita</a>
+        <a href="dosagem.html">Dosagem</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Produtos da venda</h2>
+            <article>
+                <h3>Dipirona 500 mg</h3>
+                <p>Quantidade: 1</p>
+                <p>Preço: R$ 12,90</p>
+            </article>
+            <article>
+                <h3>Paracetamol 750 mg</h3>
+                <p>Quantidade: 1</p>
+                <p>Preço: R$ 10,50</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Resumo da venda</h2>
+            <article>
+                <p><strong>Total:</strong> R$ 23,40</p>
+
+                <label for="pagamento">Forma de pagamento</label>
+                <select id="pagamento" name="pagamento">
+                    <option>Dinheiro</option>
+                    <option>Pix</option>
+                    <option>Cartão</option>
+                </select>
+
+                <p>Os produtos acima não exigem receita, por enquanto.</p>
+                <button type="button">Finalizar venda</button>
+            </article>
+        </section>
+    </main>
+<footer>
+    <h2>Farmácia e Fármacos</h2>
+</footer>
+</body>
+</html>
