@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
+<rect width="300" height="180" fill="#eeeeee"/>
+<circle cx="150" cy="90" r="50" fill="#ffffff" stroke="#777"/>
+<text x="150" y="95" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Comprimidos</text>
+</svg>
