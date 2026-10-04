@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia - Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Controle de Estoque</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="estoque.html">Estoque</a>
+        <a href="vendas.html">Vendas</a>
+        <a href="receita.html">Receita</a>
+        <a href="dosagem.html">Dosagem</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Produtos em estoque</h2>
+            <article class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Mínimo</th>
+                            <th>Validade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dipirona 500 mg</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>12/2027</td>
+                            <td class="normal">Normal</td>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol 750 mg</td>
+                            <td>15</td>
+                            <td>10</td>
+                            <td>09/2027</td>
+                            <td class="normal">Normal</td>
+                        </tr>
+                        <tr>
+                            <td>Antialérgico 100 ml</td>
+                            <td>7</td>
+                            <td>10</td>
+                            <td>05/2027</td>
+                            <td class="baixo">Baixo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section>
+            <h2>Entrada e saída</h2>
+            <article>
+                <form>
+                    <label for="produto">Produto</label>
+                    <select id="produto" name="produto">
+                        <option>Dipirona 500 mg</option>
+                        <option>Paracetamol 750 mg</option>
+                        <option>Antialérgico 100 ml</option>
+                    </select>
+
+                    <label for="movimento">Movimentação</label>
+                    <select id="movimento" name="movimento">
+                        <option>Entrada</option>
+                        <option>Saída</option>
+                    </select>
+
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1">
+
+                    <button type="submit">Registrar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+    <h2>Farmácia e Fármacos</h2>
+</footer>
+</body>
+</html>
