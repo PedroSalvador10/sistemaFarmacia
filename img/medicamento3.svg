@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
+<rect width="300" height="180" fill="#eeeeee"/>
+<rect x="115" y="35" width="70" height="110" rx="8" fill="#ffffff" stroke="#777"/>
+<text x="150" y="90" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">Frasco</text>
+<text x="150" y="110" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">100 ml</text>
+</svg>
