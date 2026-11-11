@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmácia - Dosagem</title>
+    <title>Calculadora de Dosagem - FARMABRÁ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Calculadora de Dosagem</h1>
+        <div class="topo">
+            <a href="index.html" class="marca-link" aria-label="Voltar para Home">
+                <img src="img/logo.png" alt="Logo da FARMABRÁ" class="logo">
+                <span>FARMABRÁ</span>
+            </a>
+        </div>
     </header>
-
-    <nav>
+    <nav aria-label="Menu principal">
         <a href="index.html">Home</a>
         <a href="catalogo.html">Catálogo</a>
         <a href="estoque.html">Estoque</a>
         <a href="vendas.html">Vendas</a>
         <a href="receita.html">Receita</a>
-        <a href="dosagem.html">Dosagem</a>
+        <a href="dosagem.html" class="ativo" aria-current="page">Dosagem</a>
         <a href="contato.html">Contato</a>
     </nav>
-
     <main>
+        <h1>Calculadora de Dosagem</h1>
+
+        <p class="introducao">Informe os dados indicados na prescrição.</p>
         <section>
-            <h2>Dados para cálculo</h2>
-            <article>
-                <form>
-                    <label for="dose">Dose prescrita</label>
-                    <input type="number" id="dose" name="dose">
-
-                    <label for="peso">Peso</label>
-                    <input type="number" id="peso" name="peso">
-
-                    <label for="frequencia">Frequência</label>
-                    <input type="text" id="frequencia" name="frequencia">
-
-                    <button type="button">Calcular</button>
-                </form>
-
-                <p>O cálculo ainda não desenvolvido.</p>
-            </article>
+            <h2>Dados do cálculo</h2>
+            <form>
+                <label for="dose">Dose prescrita (mg/kg)</label>
+                <input type="number" id="dose" name="dose" min="0" step="any" placeholder="Ex.: 10">
+                <label for="peso">Peso (kg)</label>
+                <input type="number" id="peso" name="peso" min="0" step="any" placeholder="Ex.: 60">
+                <label for="frequencia">Frequência</label>
+                <input type="text" id="frequencia" name="frequencia" placeholder="Conforme prescrição">
+                <button type="button">Calcular</button>
+                <p class="nota">Cálculo automático indisponível. Para orientações de dose, consulte um profissional de saúde.</p>
+            </form>
         </section>
     </main>
-<footer>
-    <h2>Farmácia e Fármacos</h2>
-</footer>
+    <footer>
+        <p>FARMABRÁ &bull; Farmácia e Saúde</p>
+    </footer>
 </body>
 </html>

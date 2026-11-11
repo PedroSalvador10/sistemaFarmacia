@@ -3,70 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmácia - Catálogo</title>
+    <title>Catálogo de Produtos - FARMABRÁ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Catálogo de Produtos</h1>
+        <div class="topo">
+            <a href="index.html" class="marca-link" aria-label="Voltar para Home">
+                <img src="img/logo.png" alt="Logo da FARMABRÁ" class="logo">
+                <span>FARMABRÁ</span>
+            </a>
+        </div>
     </header>
-
-    <nav>
+    <nav aria-label="Menu principal">
         <a href="index.html">Home</a>
-        <a href="catalogo.html">Catálogo</a>
+        <a href="catalogo.html" class="ativo" aria-current="page">Catálogo</a>
         <a href="estoque.html">Estoque</a>
         <a href="vendas.html">Vendas</a>
         <a href="receita.html">Receita</a>
         <a href="dosagem.html">Dosagem</a>
         <a href="contato.html">Contato</a>
     </nav>
-
     <main>
+        <h1>Catálogo de Produtos</h1>
+
+        <p class="introducao">Consulte os medicamentos e suplementos disponíveis no catálogo da FARMABRÁ.</p>
         <section>
-            <h2>Medicamentos</h2>
+            <h2>Produtos cadastrados</h2>
             <div class="grade-produtos">
                 <article class="produto">
-                    <img src="img/medicamento1.svg" alt="Caixa ilustrativa de Dipirona 500 mg">
+                    <img src="img/dipirona.jpg" alt="Ilustração genérica de dipirona 500 mg" loading="lazy">
                     <h3>Dipirona 500 mg</h3>
                     <p>Genérico</p>
-                    <p>Laboratório: Exemplo</p>
-                    <p>Preço: R$ 12,90</p>
-                    <p>Estoque: 20 unidades</p>
-                    <a class="botao" href="medicamento.html">Ver detalhes</a>
+                    <p><strong>Apresentação:</strong> 20 comprimidos</p>
+                    <p><strong>Preço:</strong> R$ 12,90</p>
+                    <p><strong>Estoque:</strong> 20 unidades</p>
+                    <span class="etiqueta normal">Disponível</span>
+                    <a class="botao" href="medicamento.html#dipirona">Ver ficha</a>
                 </article>
-
                 <article class="produto">
-                    <img src="img/medicamento2.svg" alt="Ilustração de comprimidos de Paracetamol 750 mg">
-                    <h3>Paracetamol 750 mg</h3>
+                    <img src="img/paracetamol.jpg" alt="Ilustração genérica de paracetamol 500 mg" loading="lazy">
+                    <h3>Paracetamol 500 mg</h3>
+                    <p>Referência / genérico</p>
+                    <p><strong>Apresentação:</strong> 20 comprimidos</p>
+                    <p><strong>Preço:</strong> R$ 10,50</p>
+                    <p><strong>Estoque:</strong> 14 unidades</p>
+                    <span class="etiqueta normal">Disponível</span>
+                    <a class="botao" href="medicamento.html#paracetamol">Ver ficha</a>
+                </article>
+                <article class="produto">
+                    <img src="img/ibuprofeno.jpg" alt="Ilustração genérica de ibuprofeno 200 mg" loading="lazy">
+                    <h3>Ibuprofeno 200 mg</h3>
                     <p>Genérico</p>
-                    <p>Laboratório: Exemplo</p>
-                    <p>Preço: R$ 10,50</p>
-                    <p>Estoque: 15 unidades</p>
-                    <a class="botao" href="medicamento.html">Ver detalhes</a>
+                    <p><strong>Apresentação:</strong> 20 comprimidos</p>
+                    <p><strong>Preço:</strong> R$ 16,90</p>
+                    <p><strong>Estoque:</strong> 6 unidades</p>
+                    <span class="etiqueta baixo">Estoque baixo</span>
+                    <a class="botao" href="medicamento.html#ibuprofeno">Ver ficha</a>
                 </article>
-
                 <article class="produto">
-                    <img src="img/medicamento3.svg" alt="Frasco ilustrativo de antialérgico 100 ml">
-                    <h3>Antialérgico 100 ml</h3>
-                    <p>Similar</p>
-                    <p>Laboratório: Exemplo</p>
-                    <p>Preço: R$ 18,00</p>
-                    <p>Estoque: 7 unidades</p>
-                    <a class="botao" href="medicamento.html">Ver detalhes</a>
+                    <img src="img/omeprazol.jpg" alt="Ilustração genérica de omeprazol 20 mg" loading="lazy">
+                    <h3>Omeprazol 20 mg</h3>
+                    <p>Genérico</p>
+                    <p><strong>Apresentação:</strong> 30 cápsulas</p>
+                    <p><strong>Preço:</strong> R$ 19,50</p>
+                    <p><strong>Estoque:</strong> 9 unidades</p>
+                    <span class="etiqueta baixo">Estoque baixo</span>
+                    <a class="botao" href="medicamento.html#omeprazol">Ver ficha</a>
+                </article>
+                <article class="produto">
+                    <img src="img/vitamina-c.jpg" alt="Ilustração genérica de vitamina C 500 mg" loading="lazy">
+                    <h3>Vitamina C 500 mg</h3>
+                    <p>Suplemento</p>
+                    <p><strong>Apresentação:</strong> 30 comprimidos</p>
+                    <p><strong>Preço:</strong> R$ 14,00</p>
+                    <p><strong>Estoque:</strong> 12 unidades</p>
+                    <span class="etiqueta normal">Disponível</span>
+                    <a class="botao" href="medicamento.html#vitamina">Ver ficha</a>
+                </article>
+                <article class="produto">
+                    <img src="img/aas.jpg" alt="Ilustração genérica de ácido acetilsalicílico 500 mg" loading="lazy">
+                    <h3>Ácido acetilsalicílico 500 mg</h3>
+                    <p>Referência / genérico</p>
+                    <p><strong>Apresentação:</strong> 20 comprimidos</p>
+                    <p><strong>Preço:</strong> R$ 8,90</p>
+                    <p><strong>Estoque:</strong> 4 unidades</p>
+                    <span class="etiqueta baixo">Estoque baixo</span>
+                    <a class="botao" href="medicamento.html#aas">Ver ficha</a>
                 </article>
             </div>
         </section>
-
         <section>
-            <h2>Informações externas</h2>
-            <article>
-                <p>Mais informações podem ser consultadas no site da Anvisa.</p>
-                <a href="https://www.gov.br/anvisa/pt-br" target="_blank">Site da Anvisa</a>
-            </article>
+            <h2>Consulta externa</h2>
+            <p>Para consultar informações oficiais sobre medicamentos, visite o <a href="https://www.gov.br/anvisa/pt-br" target="_blank" rel="noopener noreferrer">site da Anvisa</a>.</p>
         </section>
     </main>
-<footer>
-    <h2>Farmácia e Fármacos</h2>
-</footer>
+    <footer>
+        <p>FARMABRÁ &bull; Farmácia e Saúde</p>
+    </footer>
 </body>
 </html>

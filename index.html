@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmácia - Home</title>
+    <title>Home - FARMABRÁ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Farmácia</h1>
+        <div class="topo">
+            <a href="index.html" class="marca-link" aria-label="Voltar para Home">
+                <img src="img/logo.png" alt="Logo da FARMABRÁ" class="logo">
+                <span>FARMABRÁ</span>
+            </a>
+        </div>
     </header>
-
-    <nav>
-        <a href="index.html">Home</a>
+    <nav aria-label="Menu principal">
+        <a href="index.html" class="ativo" aria-current="page">Home</a>
         <a href="catalogo.html">Catálogo</a>
         <a href="estoque.html">Estoque</a>
         <a href="vendas.html">Vendas</a>
@@ -20,47 +24,56 @@
         <a href="dosagem.html">Dosagem</a>
         <a href="contato.html">Contato</a>
     </nav>
-
     <main>
+        <h1>Home</h1>
+
+        <section class="apresentacao">
+            <h2>Bem-vindo à FARMABRÁ</h2>
+            <p>Encontre medicamentos, informações de estoque, vendas e outros serviços da farmácia.</p>
+            <p>Use o menu acima para acessar as diferentes áreas do site.</p>
+        </section>
+
         <section>
-            <h2>Resumo</h2>
+            <h2>Resumo do dia</h2>
             <div class="resumo">
-                <article>
+                <div class="resumo-item">
                     <h3>Vendas do dia</h3>
-                    <p>R$ 850,00</p>
-                </article>
-                <article>
+                    <p class="numero">R$ 23,40</p>
+                    <p>Resumo de vendas</p>
+                </div>
+                <div class="resumo-item">
                     <h3>Produtos cadastrados</h3>
-                    <p>25 produtos</p>
-                </article>
-                <article>
+                    <p class="numero">6</p>
+                    <p>Medicamentos e suplementos</p>
+                </div>
+                <div class="resumo-item">
                     <h3>Estoque baixo</h3>
-                    <p>3 produtos</p>
-                </article>
+                    <p class="numero">3</p>
+                    <p>Produtos para conferir</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <h2>Avisos</h2>
-            <article>
-                <h3>Estoque baixo</h3>
-                <p>Alguns produtos precisam de reposição.</p>
-                <a href="estoque.html">Ver estoque</a>
-            </article>
+            <h2>Avisos do estoque</h2>
+            <div class="aviso">
+                <strong>Atenção:</strong> Ibuprofeno, Omeprazol e Ácido acetilsalicílico estão abaixo do estoque mínimo cadastrado.
+                <p><a href="estoque.html">Consultar a tabela de estoque</a></p>
+            </div>
         </section>
 
         <section>
-            <h2>Atalhos</h2>
-            <article>
-                <p><a href="catalogo.html">Consultar produtos</a></p>
-                <p><a href="vendas.html">Ir para vendas</a></p>
-                <p><a href="receita.html">Ir para receita</a></p>
-                <p><a href="dosagem.html">Ir para dosagem</a></p>
-            </article>
+            <h2>Acesso rápido</h2>
+            <div class="atalhos">
+                <a href="catalogo.html">Ver catálogo</a>
+                <a href="vendas.html">Consultar venda</a>
+                <a href="receita.html">Abrir receita</a>
+                <a href="dosagem.html">Abrir dosagem</a>
+            </div>
         </section>
     </main>
-<footer>
-    <h2>Farmácia e Fármacos</h2>
-</footer>
+    <footer>
+        <p>FARMABRÁ</p>
+    </footer>
 </body>
 </html>

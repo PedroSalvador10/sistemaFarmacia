@@ -3,57 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmácia - Medicamento</title>
+    <title>Ficha do Medicamento - FARMABRÁ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Ficha do Medicamento</h1>
+        <div class="topo">
+            <a href="index.html" class="marca-link" aria-label="Voltar para Home">
+                <img src="img/logo.png" alt="Logo da FARMABRÁ" class="logo">
+                <span>FARMABRÁ</span>
+            </a>
+        </div>
     </header>
-
-    <nav>
+    <nav aria-label="Menu principal">
         <a href="index.html">Home</a>
-        <a href="catalogo.html">Catálogo</a>
+        <a href="catalogo.html" class="ativo" aria-current="page">Catálogo</a>
         <a href="estoque.html">Estoque</a>
         <a href="vendas.html">Vendas</a>
         <a href="receita.html">Receita</a>
         <a href="dosagem.html">Dosagem</a>
         <a href="contato.html">Contato</a>
     </nav>
-
     <main>
+        <h1>Ficha do Medicamento</h1>
+
+        <p class="introducao">Aqui estão as fichas dos produtos apresentados no catálogo.</p>
         <section>
-            <article>
-                <img class="imagem-medicamento" src="img/medicamento1.svg" alt="Caixa ilustrativa de Dipirona 500 mg">
-                <h2>Dipirona 500 mg</h2>
-                <h3>Dados do produto</h3>
-                <p><strong>Princípio ativo:</strong> Dipirona monoidratada</p>
-                <p><strong>Tipo:</strong> Genérico</p>
-                <p><strong>Apresentação:</strong> Comprimidos de 500 mg</p>
-                <p><strong>Preço:</strong> R$ 12,90</p>
-                <p><strong>Estoque:</strong> 20 unidades</p>
+            <h2>Informações dos medicamentos</h2>
+            <p class="aviso">Informações resumidas. Para uso, contraindicações e doses, consulte a bula e um profissional de saúde.</p>
+            <article class="ficha" id="dipirona">
+                <h3>Dipirona 500 mg</h3>
+                <div class="ficha-conteudo">
+                    <img src="img/dipirona.jpg" alt="Ilustração genérica de dipirona 500 mg" loading="lazy">
+                    <div>
+                        <p><strong>Princípio ativo:</strong> Dipirona monoidratada</p>
+                        <p><strong>Tipo:</strong> Genérico</p>
+                        <p><strong>Apresentação:</strong> Comprimidos</p>
+                        <p><strong>Preço:</strong> R$ 12,90</p>
+                        <p><strong>Quantidade em estoque:</strong> 20 unidades</p>
+                        <p><strong>Informação geral:</strong> Analgésico e antitérmico.</p>
+                        <p><strong>Dispensação:</strong> Consultar a embalagem e orientação farmacêutica.</p>
+                        <p><a href="catalogo.html">Voltar ao catálogo</a></p>
+                    </div>
+                </div>
             </article>
-        </section>
-
-        <section>
-            <h2>Informações</h2>
-            <article>
-                <h3>Indicação</h3>
-                <p>Usado como analgésico e antitérmico.</p>
-
-                <h3>Contraindicações</h3>
-                <p>As informações completas devem ser verificadas na bula.</p>
-
-                <h3>Modo de uso</h3>
-                <p>O uso deve seguir a orientação de um profissional de saúde.</p>
-
-                <h3>Necessidade de receita</h3>
-                <p>Não.</p>
+            <article class="ficha" id="paracetamol">
+                <h3>Paracetamol 500 mg</h3>
+                <div class="ficha-conteudo">
+                    <img src="img/paracetamol.jpg" alt="Ilustração genérica de paracetamol 500 mg" loading="lazy">
+                    <div>
+                        <p><strong>Princípio ativo:</strong> Paracetamol</p>
+                        <p><strong>Tipo:</strong> Referência / genérico</p>
+                        <p><strong>Apresentação:</strong> Comprimidos</p>
+                        <p><strong>Preço:</strong> R$ 10,50</p>
+                        <p><strong>Quantidade em estoque:</strong> 14 unidades</p>
+                        <p><strong>Informação geral:</strong> Analgésico e antitérmico.</p>
+                        <p><strong>Dispensação:</strong> Consultar a embalagem e orientação farmacêutica.</p>
+                        <p><a href="catalogo.html">Voltar ao catálogo</a></p>
+                    </div>
+                </div>
+            </article>
+            <article class="ficha" id="ibuprofeno">
+                <h3>Ibuprofeno 200 mg</h3>
+                <div class="ficha-conteudo">
+                    <img src="img/ibuprofeno.jpg" alt="Ilustração genérica de ibuprofeno 200 mg" loading="lazy">
+                    <div>
+                        <p><strong>Princípio ativo:</strong> Ibuprofeno</p>
+                        <p><strong>Tipo:</strong> Genérico</p>
+                        <p><strong>Apresentação:</strong> Comprimidos</p>
+                        <p><strong>Preço:</strong> R$ 16,90</p>
+                        <p><strong>Quantidade em estoque:</strong> 6 unidades</p>
+                        <p><strong>Informação geral:</strong> Medicamento anti-inflamatório.</p>
+                        <p><strong>Dispensação:</strong> Consultar a embalagem e orientação farmacêutica.</p>
+                        <p><a href="catalogo.html">Voltar ao catálogo</a></p>
+                    </div>
+                </div>
+            </article>
+            <article class="ficha" id="omeprazol">
+                <h3>Omeprazol 20 mg</h3>
+                <div class="ficha-conteudo">
+                    <img src="img/omeprazol.jpg" alt="Ilustração genérica de omeprazol 20 mg" loading="lazy">
+                    <div>
+                        <p><strong>Princípio ativo:</strong> Omeprazol</p>
+                        <p><strong>Tipo:</strong> Genérico</p>
+                        <p><strong>Apresentação:</strong> Cápsulas</p>
+                        <p><strong>Preço:</strong> R$ 19,50</p>
+                        <p><strong>Quantidade em estoque:</strong> 9 unidades</p>
+                        <p><strong>Informação geral:</strong> Medicamento utilizado para reduzir a acidez do estômago.</p>
+                        <p><strong>Dispensação:</strong> Seguir as orientações de prescrição e dispensação.</p>
+                        <p><a href="catalogo.html">Voltar ao catálogo</a></p>
+                    </div>
+                </div>
+            </article>
+            <article class="ficha" id="vitamina">
+                <h3>Vitamina C 500 mg</h3>
+                <div class="ficha-conteudo">
+                    <img src="img/vitamina-c.jpg" alt="Ilustração genérica de vitamina C 500 mg" loading="lazy">
+                    <div>
+                        <p><strong>Princípio ativo:</strong> Ácido ascórbico</p>
+                        <p><strong>Tipo:</strong> Suplemento</p>
+                        <p><strong>Apresentação:</strong> Comprimidos</p>
+                        <p><strong>Preço:</strong> R$ 14,00</p>
+                        <p><strong>Quantidade em estoque:</strong> 12 unidades</p>
+                        <p><strong>Informação geral:</strong> Suplemento contendo ácido ascórbico.</p>
+                        <p><strong>Dispensação:</strong> Não se aplica; conferir a rotulagem.</p>
+                        <p><a href="catalogo.html">Voltar ao catálogo</a></p>
+                    </div>
+                </div>
+            </article>
+            <article class="ficha" id="aas">
+                <h3>Ácido acetilsalicílico 500 mg</h3>
+                <div class="ficha-conteudo">
+                    <img src="img/aas.jpg" alt="Ilustração genérica de ácido acetilsalicílico 500 mg" loading="lazy">
+                    <div>
+                        <p><strong>Princípio ativo:</strong> Ácido acetilsalicílico</p>
+                        <p><strong>Tipo:</strong> Referência / genérico</p>
+                        <p><strong>Apresentação:</strong> Comprimidos</p>
+                        <p><strong>Preço:</strong> R$ 8,90</p>
+                        <p><strong>Quantidade em estoque:</strong> 4 unidades</p>
+                        <p><strong>Informação geral:</strong> Medicamento com ação analgésica e antitérmica.</p>
+                        <p><strong>Dispensação:</strong> Consultar a embalagem e orientação farmacêutica.</p>
+                        <p><a href="catalogo.html">Voltar ao catálogo</a></p>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
-<footer>
-    <h2>Farmácia e Fármacos</h2>
-</footer>
+    <footer>
+        <p>FARMABRÁ &bull; Farmácia e Saúde</p>
+    </footer>
 </body>
 </html>

@@ -3,55 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmácia - Receita</title>
+    <title>Geração de Receita - FARMABRÁ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Geração de Receita</h1>
+        <div class="topo">
+            <a href="index.html" class="marca-link" aria-label="Voltar para Home">
+                <img src="img/logo.png" alt="Logo da FARMABRÁ" class="logo">
+                <span>FARMABRÁ</span>
+            </a>
+        </div>
     </header>
-
-    <nav>
+    <nav aria-label="Menu principal">
         <a href="index.html">Home</a>
         <a href="catalogo.html">Catálogo</a>
         <a href="estoque.html">Estoque</a>
         <a href="vendas.html">Vendas</a>
-        <a href="receita.html">Receita</a>
+        <a href="receita.html" class="ativo" aria-current="page">Receita</a>
         <a href="dosagem.html">Dosagem</a>
         <a href="contato.html">Contato</a>
     </nav>
-
     <main>
+        <h1>Geração de Receita</h1>
+
+        <p class="introducao">Preencha os dados da prescrição nos campos abaixo.</p>
         <section>
             <h2>Dados da receita</h2>
-            <article>
-          
-                <form>
-                    <label for="paciente">Paciente</label>
-                    <input type="text" id="paciente" name="paciente">
-
-                    <label for="medico">Médico</label>
-                    <input type="text" id="medico" name="medico">
-
-                    <label for="crm">CRM</label>
-                    <input type="text" id="crm" name="crm">
-
-                    <label for="medicamento">Medicamento</label>
-                    <input type="text" id="medicamento" name="medicamento">
-
-                    <label for="dosagem">Dosagem</label>
-                    <input type="text" id="dosagem" name="dosagem">
-
-                    <label for="posologia">Posologia</label>
-                    <textarea id="posologia" name="posologia" rows="4"></textarea>
-
-                    <button type="submit">Gerar</button>
-                </form>
-            </article>
+            <form>
+                <label for="paciente">Nome do paciente</label>
+                <input type="text" id="paciente" name="paciente" placeholder="Nome do paciente">
+                <label for="medico">Nome do médico</label>
+                <input type="text" id="medico" name="medico" placeholder="Nome do profissional">
+                <label for="crm">CRM</label>
+                <input type="text" id="crm" name="crm" placeholder="Número de registro">
+                <label for="medicamento">Medicamento</label>
+                <input type="text" id="medicamento" name="medicamento" placeholder="Nome do medicamento">
+                <label for="dosagem">Dosagem prescrita</label>
+                <input type="text" id="dosagem" name="dosagem" placeholder="Conforme prescrição">
+                <label for="posologia">Posologia</label>
+                <textarea id="posologia" name="posologia" rows="4" placeholder="Descreva a posologia"></textarea>
+                <button type="button">Gerar receita</button>
+                <p class="nota">Emissão de receitas indisponível. Este formulário não substitui uma prescrição médica.</p>
+            </form>
         </section>
     </main>
-<footer>
-    <h2>Farmácia e Fármacos</h2>
-</footer>
+    <footer>
+        <p>FARMABRÁ &bull; Farmácia e Saúde</p>
+    </footer>
 </body>
 </html>

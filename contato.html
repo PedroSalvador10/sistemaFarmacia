@@ -3,63 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmácia - Contato</title>
+    <title>Contato / SAC - FARMABRÁ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Contato / SAC</h1>
+        <div class="topo">
+            <a href="index.html" class="marca-link" aria-label="Voltar para Home">
+                <img src="img/logo.png" alt="Logo da FARMABRÁ" class="logo">
+                <span>FARMABRÁ</span>
+            </a>
+        </div>
     </header>
-
-    <nav>
+    <nav aria-label="Menu principal">
         <a href="index.html">Home</a>
         <a href="catalogo.html">Catálogo</a>
         <a href="estoque.html">Estoque</a>
         <a href="vendas.html">Vendas</a>
         <a href="receita.html">Receita</a>
         <a href="dosagem.html">Dosagem</a>
-        <a href="contato.html">Contato</a>
+        <a href="contato.html" class="ativo" aria-current="page">Contato</a>
     </nav>
-
     <main>
+        <h1>Contato / SAC</h1>
+
         <section>
             <h2>Fale conosco</h2>
-            <article>
-                <form>
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome">
-
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="assunto">Assunto</label>
-                    <select id="assunto" name="assunto">
-                        <option>Dúvida</option>
-                        <option>Reclamação</option>
-                        <option>Sugestão</option>
-                    </select>
-
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </article>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto">
+                    <option>Dúvida</option>
+                    <option>Reclamação</option>
+                    <option>Sugestão</option>
+                </select>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+                <button type="button">Enviar</button>
+                <p class="nota">Envio de mensagens indisponível no momento.</p>
+            </form>
         </section>
-
         <section>
-            <h2>Atendimento</h2>
-            <article>
-                <h3>Horário</h3>
-                <p>Segunda a sábado: 05:48h às 17:34h</p>
-                <p>Domingo: 9h às 18h</p>
-                <p>Fone: (54) 0000-0000</p>
-                <p>Endereço: Rua das Avenidas, 5554</p>
-            </article>
+            <h2>Informações úteis</h2>
+            <div class="informacoes">
+                <h3>Consulta de produtos</h3>
+                <p>Confira os medicamentos no <a href="catalogo.html">Catálogo de Produtos</a>.</p>
+                <h3>Disponibilidade</h3>
+                <p>Veja as quantidades na página de <a href="estoque.html">Controle de Estoque</a>.</p>
+            </div>
         </section>
     </main>
-<footer>
-    <h2>Farmácia e Fármacos</h2>
-</footer>
+    <footer>
+        <p>FARMABRÁ &bull; Farmácia e Saúde</p>
+    </footer>
 </body>
 </html>
